@@ -17,10 +17,13 @@ This tool is designed for high-speed brute-forcing of SSH servers and is capable
     Reads targets from stdin (supports real-time feeds)
 
 🛠 Installation
+
 1. Install Go (Tested with Go 1.21.3)
 
 wget https://dl.google.com/go/go1.21.3.linux-amd64.tar.gz
+
 tar -xvf go1.21.3.linux-amd64.tar.gz
+
 sudo mv go /usr/local
 
 2. Configure Environment
@@ -36,6 +39,7 @@ source ~/.profile
 3. Build the Binary
 
 go get golang.org/x/crypto/ssh
+
 go build massbrute.go
 
 ⚙️ Usage
@@ -54,9 +58,3 @@ cat iplist.txt | ./massbrute
     💾 Stores results in validos.txt with this format:
 
     192.168.0.1:root:toor
-
-🛑 Legal Disclaimer
-
-This tool is provided for educational and authorized testing purposes only.
-Any misuse or unauthorized access to systems is strictly prohibited and illegal.
-Use at your own risk.
