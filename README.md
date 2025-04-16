@@ -26,8 +26,11 @@ sudo mv go /usr/local
 2. Configure Environment
 
 export GOROOT=/usr/local/go
+
 export GOPATH=$HOME/go
+
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
 source ~/.profile
 
 3. Build the Binary
