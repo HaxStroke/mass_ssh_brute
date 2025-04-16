@@ -45,7 +45,7 @@ go build massbrute.go
 ⚙️ Usage
 Using live IP feed from ZMap:
 
-zmap -p 22 -r 0 -T 10 | ./massbrute
+zmap -p 22 -r 0 -T 10 -o- | ./massbrute
 
 Using static IP list:
 
